@@ -1,0 +1,61 @@
+@import '~bootstrap/scss/bootstrap';
+
+.container {
+
+  .title {
+    position: absolute;
+    right: 30%;
+    top: 25%;
+    font-size: 50px;
+    color: black;
+  }
+
+  .signUp {
+    display: flex;
+    position: absolute;
+    top: 40%;
+    right: 41%;
+    border: 5px solid turquoise;
+    background-color: black;
+    font-size: 50px;
+      &:hover {
+        text-decoration: none;
+        background-color: red;
+        color: white;
+      }
+  }
+
+  .signIn {
+    display: flex;
+    position: absolute;
+    top: 55%;
+    right: 42%;
+    border: 5px solid turquoise;
+    background-color: black;
+    font-size: 50px;
+      &:hover {
+        text-decoration: none;
+        background-color: red;
+        color: white;
+      }
+  }
+
+  .guest {
+    display: flex;
+    position: absolute;
+    top: 70%;
+    right: 33%;
+    border: 5px solid turquoise;
+    background-color: black;
+    font-size: 50px;
+      &:hover {
+        text-decoration: none;
+        background-color: red;
+        color: white;
+      }
+  }
+}
+
+// body {
+//   background-image: url('../../../ImagesVideos/blackGrey\ spiral.gif');
+// }

@@ -1,0 +1,32 @@
+@import '~bootstrap/scss/bootstrap';
+
+//controls the entire ed edd eddy positions
+.edEddEddyContent {
+  position: absolute;
+  top: 40%;
+}
+// controls the ed edd eddy image
+.edEddEddyImage {
+  position: absolute;
+  top: -180px;
+  width: 100%;
+}
+// controls the text inside the dropdown button
+.edEddEddyTitle {
+  color: aliceblue;
+}
+// controls the area inside the dropdown button
+// .edEddEddyDropdown {
+//   // width: 15%;
+// }
+// controls the inside of the dropdown menu
+.edEddEddyEpisodes {
+  color: red;
+  overflow: auto;
+  height: 100px;
+}
+
+// lol
+body {
+  background-color: dimgrey;
+}

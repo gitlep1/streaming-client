@@ -1,0 +1,83 @@
+@import '~bootstrap/scss/bootstrap';
+
+.welcomeStyle {
+  color: white;
+  background-color: transparent;
+  position: absolute; 
+  bottom: 25%;
+  right: 35%;
+}
+
+// controls the area around home
+.navbar-brand {
+  background-color: transparent;
+  &:hover {
+    background-color: red;
+    text-decoration: none;
+    border-radius: 50px;
+  }
+}
+
+// controls the middle part of the navigation bar (wide bar on top)
+#basic-navbar-nav {
+  background-color: transparent;
+}
+
+// controls the area around sign up, sign in
+.nav-link {
+  background-color: transparent;
+  border-radius: 50px;
+  &:hover {
+    background-color: red;
+    text-decoration: none;
+  }
+}
+
+// controls the entire navigation bar (the parts without words)
+.navbar {
+  background-color: transparent;
+}
+
+.navbarStyle {
+  background-color: transparent;
+  background-image: url('../../ImagesVideos/blackGrey\ spiral.gif');
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.signUpStyle {
+  color: red;
+  background-color: aliceblue;
+}
+
+.signInStyle {
+  color: red;
+  background-color: aliceblue;
+}
+
+.changePasswordStyle {
+  color: red;
+  background-color: aliceblue;
+}
+
+.signOutStyle {
+  color: red;
+  background-color: aliceblue;
+}
+
+.homeStyle {
+  color: red;
+  background-color: aliceblue;
+  border-radius: 50px;
+}
+
+body {
+  background-color: aliceblue;
+    // &:hover {
+    //   animation: testing 10s infinite;
+    //   @keyframes testing {
+    //     0% { background-color: white }
+    //     50% { background-color: black }
+    //   }
+    // }
+}
