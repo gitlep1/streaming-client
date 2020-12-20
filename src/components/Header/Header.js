@@ -19,7 +19,7 @@ const unauthenticatedOptions = (
 
 const Header = ({ user }) => (
   <Navbar expand="md" varient="dark" className="navbarStyle">
-    <Navbar.Brand href="#cartoons" className="homeStyle">
+    <Navbar.Brand href="#Homepage" className="homeStyle">
     Cartoon Streaming
     </Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
