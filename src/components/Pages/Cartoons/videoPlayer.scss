@@ -16,11 +16,32 @@ body {
 
 .seasonDropdown {
   position: absolute;
-  top: 115vh;
+  bottom: -100vh;
   left: 42vw;
   width: 12%;
 }
 
 .seasonEpisodes {
   background-color: aliceblue;
+}
+
+.episodeTitle {
+  color: black;
+  font-size: 25px;
+}
+
+.seasonTitle {
+  color: aliceblue;
+  font-size: 20px;
+}
+
+.addToPlaylist {
+  position: absolute;
+  right: 10vw;
+  top: 115vh;
+  font-size: 20px;
+}
+
+.addToPlaylistButton {
+  background-color: none;
 }

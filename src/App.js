@@ -10,8 +10,9 @@ import SignIn from './components/SignIn/SignIn'
 import SignOut from './components/SignOut/SignOut'
 import ChangePassword from './components/ChangePassword/ChangePassword'
 import FirstPage from './components/Pages/Firstpage/Firstpage'
+import homePage from './components/Pages/HomePage/Homepage'
 import CartoonsPage from './components/Pages/CartoonsPage/CartoonsPage'
-import edEddEddyHomepage from './components/Pages/Cartoons/EdEddEddy/EdEddEddy'
+import edEddEddyEpisode1 from './components/Pages/Cartoons/EdEddEddy/EdEddEddyEpisode1'
 
 class App extends Component {
   constructor () {
@@ -69,8 +70,9 @@ class App extends Component {
             <ChangePassword msgAlert={this.msgAlert} user={user} />
           )} />
           <Route exact path='/' component={FirstPage} />
+          <Route exact path='/Homepage' component={homePage} />
           <Route exact path='/cartoons' component={CartoonsPage} />
-          <Route path="/cartoons" component={edEddEddyHomepage} />
+          <Route exact path="/cartoons/ed-edd-eddy/episode-1" component={edEddEddyEpisode1} />
         </main>
       </Fragment>
     )

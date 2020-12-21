@@ -8,16 +8,31 @@ import S1E1 from '../../../../ImagesVideos/EdEddEddy/Season 1 Episode 1.mp4'
 
 import '../videoPlayer.scss'
 
-const edEddEddyHomepage = () => (
+const buttonStyle = {
+  outline: 'none'
+}
+
+const edEddEddyEpisode1 = () => (
   <div>
     <Player
       playsInline
       src={S1E1}
     />
     <div>
-      <p>
+      <p className="episodeTitle">
         Episode 1: The Ed-touchables / Nagged to Ed
       </p>
+      <div className="addToPlaylist">
+        <NavDropdown title={
+          <span className="addToPlaylistTitle">Add to playlist</span>
+        }
+        id="nav-dropdown"
+        className="addToPlaylistDropdown">
+          <div>
+            <button className="addToPlaylistButton" style={buttonStyle}>Create Playlist +</button>
+          </div>
+        </NavDropdown>
+      </div>
     </div>
     <div>
       <img src={edEddEddyImage} />
@@ -27,20 +42,20 @@ const edEddEddyHomepage = () => (
         </p>
       </div>
       <NavDropdown title={
-        <span className="edEddEddyTitle">Season 1</span>
+        <span className="seasonTitle">Season 1</span>
       }
-      // id="nav-dropdown"
+      id="nav-dropdown"
       className="seasonDropdown">
         <div className="seasonEpisodes">
-          <Link to="cartoons/ed-edd-eddy/episode-1">Episode 1</Link><br/>
-          <Link to="cartoons/ed-edd-eddy/episode-2">Episode 2</Link><br/>
-          <Link to="cartoons/ed-edd-eddy/episode-3">Episode 3</Link><br/>
-          <Link to="cartoons/ed-edd-eddy/episode-4">Episode 4</Link><br/>
-          <Link to="cartoons/ed-edd-eddy/episode-5">Episode 5</Link><br/>
+          <Link to="/cartoons/ed-edd-eddy/episode-1">Episode 1</Link><br/>
+          <Link to="/cartoons/ed-edd-eddy/episode-2">Episode 2</Link><br/>
+          <Link to="/cartoons/ed-edd-eddy/episode-3">Episode 3</Link><br/>
+          <Link to="/cartoons/ed-edd-eddy/episode-4">Episode 4</Link><br/>
+          <Link to="/cartoons/ed-edd-eddy/episode-5">Episode 5</Link><br/>
         </div>
       </NavDropdown>
     </div>
   </div>
 )
 
-export default edEddEddyHomepage
+export default edEddEddyEpisode1
