@@ -8,9 +8,7 @@ import catDogImage from '../../../ImagesVideos/CatDog/catdog image.png'
 import catScratchImage from '../../../ImagesVideos/Catscratch/catsctrach image.webp'
 import courageTheCowardlyDogImage from '../../../ImagesVideos/CourageTheCowardlyDog/Courage The Cowardly Dog image.png'
 import edEddEddyImage from '../../../ImagesVideos/EdEddEddy/ed edd eddy image.png'
-import familyGuyImage from '../../../ImagesVideos/Family Guy/family guy image.jpg'
-import futuramaImage from '../../../ImagesVideos/Futurama/futurama image.png'
-import liloAndStitchImage from '../../../ImagesVideos/Lilo and Stitch/lilo and stitch image.png'
+import familyGuyImage from '../../../ImagesVideos/Family Guy/family guy image.png'
 
 import './Homepage.scss'
 
@@ -40,12 +38,6 @@ const homePage = () => (
     </Link>
     <Link to="/cartoons/family-guy/episode-1" className="btn btn-primary familyGuyLink" >Family Guy
       <img src={familyGuyImage} className="familyGuyImage" />
-    </Link>
-    <Link to="/cartoons/futurama/episode-1" className="btn btn-primary futuramaLink" >Futurama
-      <img src={futuramaImage} className="futuramaImage" />
-    </Link>
-    <Link to="/cartoons/lilo-and-stitch/episode-1" className="btn btn-primary liloAndStitchLink" >Lilo And Stitch
-      <img src={liloAndStitchImage} className="liloAndStitchImage" />
     </Link>
   </div>
 )
