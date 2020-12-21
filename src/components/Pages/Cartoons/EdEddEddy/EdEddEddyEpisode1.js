@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { Player } from 'video-react'
 import { NavDropdown } from 'react-bootstrap'
 
-import edEddEddyImage from '../../../../ImagesVideos/Ed-Edd-N-Eddy-crazy-faces.png'
+import edEddEddyImage from '../../../../ImagesVideos/EdEddEddy/ed edd eddy image.png'
 import S1E1 from '../../../../ImagesVideos/EdEddEddy/Season 1 Episode 1.mp4'
 
 import '../videoPlayer.scss'
