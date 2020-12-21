@@ -6,9 +6,21 @@ body {
   overflow: auto;
 }
 
-// .videoPlayer {
-//   width: 90vw;
-//   height: 90vh;
-//   position: absolute;
-//   bottom: 0%;
-// }
+.descriptionField {
+  font-size: 20px;
+  color: black;
+  position: absolute;
+  top: 125vh;
+  left: 44vw;
+}
+
+.seasonDropdown {
+  position: absolute;
+  top: 115vh;
+  left: 42vw;
+  width: 12%;
+}
+
+.seasonEpisodes {
+  background-color: aliceblue;
+}

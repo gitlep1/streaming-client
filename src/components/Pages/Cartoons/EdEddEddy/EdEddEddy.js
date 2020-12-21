@@ -15,13 +15,23 @@ const edEddEddyHomepage = () => (
       src={S1E1}
     />
     <div>
+      <p>
+        Episode 1: The Ed-touchables / Nagged to Ed
+      </p>
+    </div>
+    <div>
       <img src={edEddEddyImage} />
+      <div className="descriptionField">
+        <p>
+        Ed, Edd n Eddy is an original animated television series<br></br> created by Danny Antonucci and produced by<br></br> Canadian-based a.k.a. Cartoon. It premiered on<br></br> Cartoon Network in 1998. Ed, Edd n Eddy is one<br></br> of Cartoon Network’s longest running and most<br></br> successful franchises[2][3] and the <br></br>longest-running of the channel’s original Cartoon <br></br>Cartoons. The series revolves around three adolescent <br></br>boys collectively known as “the Eds,” who hang <br></br>around in a suburban cul-de-sac. Unofficially led <br></br>by Eddy, the Eds constantly scheme to make money <br></br>off their peers, in order to purchase their <br></br>favorite confectionery: jawbreakers. However, their <br></br>plans usually fail, leaving them in various <br></br>predicaments.
+        </p>
+      </div>
       <NavDropdown title={
-        <span className="edEddEddyTitle">Ed Edd Eddy</span>
+        <span className="edEddEddyTitle">Season 1</span>
       }
-      id="nav-dropdown"
-      className="edEddEddyDropdown">
-        <div className="edEddEddyEpisodes">
+      // id="nav-dropdown"
+      className="seasonDropdown">
+        <div className="seasonEpisodes">
           <Link to="cartoons/ed-edd-eddy/episode-1">Episode 1</Link><br/>
           <Link to="cartoons/ed-edd-eddy/episode-2">Episode 2</Link><br/>
           <Link to="cartoons/ed-edd-eddy/episode-3">Episode 3</Link><br/>
