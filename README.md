@@ -3,6 +3,7 @@ When you first sign in you will be taken to the homepage that has 8 cartoons on 
 When you are on the cartoons page the video player is the first thing you see if you scroll down, You will see a "add to playlist" where you can add that video to a selected playlist or create a new one.
 
 TECHNOLOGIES USED:
+
   HTML
   CSS/SCSS
   JAVASCRIPT
