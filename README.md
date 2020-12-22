@@ -5,10 +5,15 @@ When you are on the cartoons page the video player is the first thing you see if
 TECHNOLOGIES USED:
 
   HTML
+  
   CSS/SCSS
+  
   JAVASCRIPT
+  
   REACT
+  
   HEROKU
+  
   MONGODB
 
 PLANNING STRATEGY:
