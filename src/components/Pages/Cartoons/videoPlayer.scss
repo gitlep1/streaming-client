@@ -12,16 +12,17 @@ body {
   position: absolute;
   top: 125vh;
   left: 44vw;
+  bottom: 0vh;
 }
 
-.seasonDropdown {
+.season1Dropdown {
   position: absolute;
   bottom: -100vh;
   left: 42vw;
   width: 12%;
 }
 
-.seasonEpisodes {
+.season1Episodes {
   background-color: aliceblue;
 }
 
@@ -30,18 +31,30 @@ body {
   font-size: 25px;
 }
 
-.seasonTitle {
+.season1Title {
   color: aliceblue;
   font-size: 20px;
 }
 
-.addToPlaylist {
+.playlistButton {
   position: absolute;
   right: 10vw;
   top: 115vh;
   font-size: 20px;
 }
 
-.addToPlaylistButton {
-  background-color: none;
+.createPlaylistButton {
+  width: 30px;
+  height: 30px;
+  background-image: url('https://www.clker.com/cliparts/2/k/n/l/C/Q/transparent-green-checkmark-md.png');
+  background-size: cover;
+  background-color: green;
+}
+
+.cancelPlaylistButton {
+  width: 30px;
+  height: 30px;
+  background-image: url('http://www.pngmart.com/files/3/Red-Cross-PNG-File.png');
+  background-size: cover;
+  background-color: darkred;
 }
