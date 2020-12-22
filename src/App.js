@@ -12,7 +12,8 @@ import ChangePassword from './components/ChangePassword/ChangePassword'
 import FirstPage from './components/Pages/Firstpage/Firstpage'
 import homePage from './components/Pages/HomePage/Homepage'
 import CartoonsPage from './components/Pages/CartoonsPage/CartoonsPage'
-import edEddEddyEpisode1 from './components/Pages/Cartoons/EdEddEddy/EdEddEddyEpisode1'
+import Playlists from './components/PlayList/playList'
+import edEddEddyEpisode1 from './components/Pages/Cartoons/EdEddEddy/season1/EdEddEddyEpisode1'
 
 class App extends Component {
   constructor () {
@@ -69,6 +70,14 @@ class App extends Component {
           <AuthenticatedRoute user={user} exact path='/change-password' render={() => (
             <ChangePassword msgAlert={this.msgAlert} user={user} />
           )} />
+          {/* <AuthenticatedRoute user={user} path='/cartoons' render={() => (
+            <div>
+              <playList msgAlert={this.msgAlert} user={user} />
+            </div>
+          )}/> */}
+          <AuthenticatedRoute user={user} path='/playlists' render={() => (
+            <Playlists msgAlert={this.msgAlert} user={user} />
+          )}/>
           <Route exact path='/' component={FirstPage} />
           <Route exact path='/Homepage' component={homePage} />
           <Route exact path='/cartoons' component={CartoonsPage} />
