@@ -12,8 +12,22 @@ import ChangePassword from './components/ChangePassword/ChangePassword'
 import FirstPage from './components/Pages/Firstpage/Firstpage'
 import homePage from './components/Pages/HomePage/Homepage'
 import CartoonsPage from './components/Pages/CartoonsPage/CartoonsPage'
-import Playlists from './components/PlayList/playList'
+// import Playlists from './components/PlayList/playList'
+import PlayListIndex from './components/PlayList/playListIndex'
+import UpdatePlayList from './components/PlayList/playListUpdate'
 import edEddEddyEpisode1 from './components/Pages/Cartoons/EdEddEddy/season1/EdEddEddyEpisode1'
+import edEddEddyEpisode2 from './components/Pages/Cartoons/EdEddEddy/season1/EdEddEddyEpisode2'
+import edEddEddyEpisode3 from './components/Pages/Cartoons/EdEddEddy/season1/EdEddEddyEpisode3'
+import edEddEddyEpisode4 from './components/Pages/Cartoons/EdEddEddy/season1/EdEddEddyEpisode4'
+import edEddEddyEpisode5 from './components/Pages/Cartoons/EdEddEddy/season1/EdEddEddyEpisode5'
+import edEddEddyEpisode6 from './components/Pages/Cartoons/EdEddEddy/season1/EdEddEddyEpisode6'
+import edEddEddyEpisode7 from './components/Pages/Cartoons/EdEddEddy/season1/EdEddEddyEpisode7'
+import edEddEddyEpisode8 from './components/Pages/Cartoons/EdEddEddy/season1/EdEddEddyEpisode8'
+import edEddEddyEpisode9 from './components/Pages/Cartoons/EdEddEddy/season1/EdEddEddyEpisode9'
+import edEddEddyEpisode10 from './components/Pages/Cartoons/EdEddEddy/season1/EdEddEddyEpisode10'
+import edEddEddyEpisode11 from './components/Pages/Cartoons/EdEddEddy/season1/EdEddEddyEpisode11'
+import edEddEddyEpisode12 from './components/Pages/Cartoons/EdEddEddy/season1/EdEddEddyEpisode12'
+import edEddEddyEpisode13 from './components/Pages/Cartoons/EdEddEddy/season1/EdEddEddyEpisode13'
 
 class App extends Component {
   constructor () {
@@ -75,13 +89,41 @@ class App extends Component {
               <playList msgAlert={this.msgAlert} user={user} />
             </div>
           )}/> */}
-          <AuthenticatedRoute user={user} path='/playlists' render={() => (
+          {/* <AuthenticatedRoute user={user} path='/playlists' render={() => (
             <Playlists msgAlert={this.msgAlert} user={user} />
+          )}/> */}
+          <AuthenticatedRoute user={user} path='/playlists' render={() => (
+            <div>
+              <PlayListIndex msgAlert={this.msgAlert} user={user} />
+            </div>
+          )}/>
+          <AuthenticatedRoute user={user} exact path='/playListUpdate/:playlistId' render={({ match, history }) => (
+            <UpdatePlayList
+              match={match}
+              history={history}
+              user={user}
+              msgAlert={this.msgAlert}
+            />
           )}/>
           <Route exact path='/' component={FirstPage} />
           <Route exact path='/Homepage' component={homePage} />
           <Route exact path='/cartoons' component={CartoonsPage} />
+          {/* <AuthenticatedRoute user={user} exact path='/cartoons/ed-edd-eddy/episode-1' render={() => (
+            <Playlists msgAlert={this.msgAlert} user={user} />
+          )}/> */}
           <Route exact path="/cartoons/ed-edd-eddy/episode-1" component={edEddEddyEpisode1} />
+          <Route exact path="/cartoons/ed-edd-eddy/episode-2" component={edEddEddyEpisode2} />
+          <Route exact path="/cartoons/ed-edd-eddy/episode-3" component={edEddEddyEpisode3} />
+          <Route exact path="/cartoons/ed-edd-eddy/episode-4" component={edEddEddyEpisode4} />
+          <Route exact path="/cartoons/ed-edd-eddy/episode-5" component={edEddEddyEpisode5} />
+          <Route exact path="/cartoons/ed-edd-eddy/episode-6" component={edEddEddyEpisode6} />
+          <Route exact path="/cartoons/ed-edd-eddy/episode-7" component={edEddEddyEpisode7} />
+          <Route exact path="/cartoons/ed-edd-eddy/episode-8" component={edEddEddyEpisode8} />
+          <Route exact path="/cartoons/ed-edd-eddy/episode-9" component={edEddEddyEpisode9} />
+          <Route exact path="/cartoons/ed-edd-eddy/episode-10" component={edEddEddyEpisode10} />
+          <Route exact path="/cartoons/ed-edd-eddy/episode-11" component={edEddEddyEpisode11} />
+          <Route exact path="/cartoons/ed-edd-eddy/episode-12" component={edEddEddyEpisode12} />
+          <Route exact path="/cartoons/ed-edd-eddy/episode-13" component={edEddEddyEpisode13} />
         </main>
       </Fragment>
     )

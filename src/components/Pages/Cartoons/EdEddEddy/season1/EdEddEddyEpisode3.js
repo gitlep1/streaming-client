@@ -4,7 +4,7 @@ import { Player } from 'video-react'
 import { NavDropdown } from 'react-bootstrap'
 
 import edEddEddyImage from '../../../../../ImagesVideos/EdEddEddy/ed edd eddy image.png'
-import S1E1 from '../../../../../ImagesVideos/EdEddEddy/Season 1 Episode 1.mp4'
+import S1E3 from '../../../../../ImagesVideos/EdEddEddy/Season 1 Episode 3.mp4'
 
 import '../../videoPlayer.scss'
 
@@ -12,15 +12,15 @@ const buttonStyle = {
   outline: 'none'
 }
 
-const edEddEddyEpisode1 = () => (
+const edEddEddyEpisode3 = () => (
   <div>
     <Player
       playsInline
-      src={S1E1}
+      src={S1E3}
     />
     <div>
       <p className="episodeTitle">
-        Episode 1: The Ed-touchables / Nagged to Ed
+        Episode 3: Sir Ed-a-Lot / A Pinch to Grow an Ed
       </p>
     </div>
     <div>
@@ -57,10 +57,6 @@ const edEddEddyEpisode1 = () => (
       }
       id="nav-dropdown"
       className="playListDropdown">
-        <output
-          className="playListOutputBox"
-          type="text"
-        />
         <div className="insidePlayList">
           <button>Create Playlist +</button>
           <input
@@ -74,4 +70,4 @@ const edEddEddyEpisode1 = () => (
   </div>
 )
 
-export default edEddEddyEpisode1
+export default edEddEddyEpisode3

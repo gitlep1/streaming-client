@@ -1,10 +1,10 @@
 import apiUrl from '../apiConfig'
 import axios from 'axios'
 
-export const playlistCreate = (playlist, user) => {
+export const playListCreate = (playlist, user) => {
   return axios({
     method: 'POST',
-    url: apiUrl + '/cartoons',
+    url: apiUrl + '/playlists',
     headers: {
       Authorization: `Bearer ${user.token}`
     },
@@ -12,40 +12,40 @@ export const playlistCreate = (playlist, user) => {
   })
 }
 
-export const playlistIndex = user => {
+export const playListIndex = user => {
   return axios({
     method: 'GET',
-    url: apiUrl + '/cartoons',
+    url: apiUrl + '/playlists',
     headers: {
       Authorization: `Bearer ${user.token}`
     }
   })
 }
 
-export const playlistDelete = (user, playlistId) => {
+export const playListDelete = (user, id) => {
   return axios({
     method: 'DELETE',
-    url: apiUrl + '/cartoons/' + playlistId,
+    url: apiUrl + '/playlists/' + id,
     headers: {
       Authorization: `Bearer ${user.token}`
     }
   })
 }
 
-export const playlistShow = (user, playlistId) => {
+export const playListShow = (user, playlistId) => {
   return axios({
     method: 'GET',
-    url: apiUrl + '/cartoons/' + playlistId,
+    url: apiUrl + '/playlists/' + playlistId,
     headers: {
       Authorization: `Bearer ${user.token}`
     }
   })
 }
 
-export const playlistUpdate = (user, playlist, id) => {
+export const playListUpdate = (user, playlist, id) => {
   return axios({
     method: 'PATCH',
-    url: apiUrl + '/cartoons/' + id,
+    url: apiUrl + '/playlists/' + id,
     headers: {
       Authorization: `Bearer ${user.token}`
     },
