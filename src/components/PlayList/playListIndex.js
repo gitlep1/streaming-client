@@ -54,41 +54,78 @@ class Playlists extends Component {
 
     onPlayListCreate = (event) => {
       event.preventDefault()
-      // event.target.reset()
 
-      const { msgAlert, user, history } = this.props
+      const { msgAlert, user } = this.props
 
       playListCreate(this.state.playlist, user)
-        .then(response => {
-          this.setState({
-            createdId: response.data._id
-          })
+
+        // giving playListIndex the parameters of (this.props.user)
+        .then(() => playListIndex(this.props.user))
+
+        // getting the res and setting the state of playlists to res.data.playlists
+        .then(res => {
+          console.log('setState playlists ', res.data.playlists)
+          return this.setState({ playlists: res.data.playlists, playlist: { title: '' } })
         })
-        .then(props => {
-          playListIndex(this.props.user)
-            .then(res => {
-              this.setState({ playlists: res.data.playlists })
-            })
-        })
-        .then(() => this.setState({ playlist: {
-          title: '' } }))
-        .then(() => history.push('/playlists'))
+
+        // showing the message alert
         .then(() => msgAlert({
           heading: 'Playlist Created',
           message: messages.createPlaylistSuccess,
           variant: 'success'
         }))
+
+        // in case of an error clear the form and show the rror message alert
         .catch(error => {
-          this.setState({ title: '' })
+          this.setState({ playlist: {
+            title: '' } })
           msgAlert({
             heading: 'Playlist Creation Failed ' + error.message,
             message: messages.createPlaylistFailure,
             variant: 'danger'
           })
         })
+
+      // playListCreate(this.state.playlist, user)
+      // // getting the response and setting the states createdId to that response I think?
+      //   .then(response => {
+      //     this.setState({
+      //       createdId: response.data._id
+      //     })
+      //   })
+      //   // giving playListIndex the parameters of (this.props.user) and getting the res and setting the state of playlists to res.data.playlists
+      //   .then(() => {
+      //     playListIndex(this.props.user)
+      //       .then(res => {
+      //         console.log('do we get the new list? ', res.data.playlists)
+      //         this.setState({ playlists: res.data.playlists })
+      //       })
+      //   })
+      //   // clearing the form
+      //   .then(() => this.setState({ playlist: {
+      //     title: '' } }))
+      //   // after submitting pushes to the url path /playlists
+      //   .then(() => history.push('/playlists'))
+      //   // showing the message alert
+      //   .then(() => msgAlert({
+      //     heading: 'Playlist Created',
+      //     message: messages.createPlaylistSuccess,
+      //     variant: 'success'
+      //   }))
+      //   // in case of an error clear the form and show the rror message alert
+      //   .catch(error => {
+      //     this.setState({ playlist: {
+      //       title: '' } })
+      //     msgAlert({
+      //       heading: 'Playlist Creation Failed ' + error.message,
+      //       message: messages.createPlaylistFailure,
+      //       variant: 'danger'
+      //     })
+      //   })
     }
 
     render () {
+      console.log('render playlists ', this.state.playlists)
       return (
         <div className="row">
           <Link to="/homepage" className="btn btn-secondary backButton" style={backButtonStyle}>{'<-Back'}</Link>
@@ -116,6 +153,7 @@ class Playlists extends Component {
               className="playListOutput"
               type="text"
               name="title"
+              value={this.state.playlist.title}
             >
               <PlayListsCreated
                 user={this.props.user}
