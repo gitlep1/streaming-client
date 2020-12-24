@@ -1,6 +1,6 @@
 {
-  "main.js": "static/js/main.068b8d70.js",
-  "main.js.map": "static/js/main.068b8d70.js.map",
+  "main.js": "static/js/main.d12b9292.js",
+  "main.js.map": "static/js/main.d12b9292.js.map",
   "static\\media\\Courage The Cowardly Dog image.png": "static/media/Courage The Cowardly Dog image.1dfdf6b9.png",
   "static\\media\\Season 1 Episode 1.mp4": "static/media/Season 1 Episode 1.1631b490.mp4",
   "static\\media\\Season 1 Episode 10.mp4": "static/media/Season 1 Episode 10.b8afa553.mp4",
@@ -20,7 +20,9 @@
   "static\\media\\blackGrey spiral.gif": "static/media/blackGrey spiral.ab5a6f32.gif",
   "static\\media\\brickleberry image.webp": "static/media/brickleberry image.ed1f7bbb.webp",
   "static\\media\\catdog image.png": "static/media/catdog image.8b3dee9f.png",
-  "static\\media\\catsctrach image.webp": "static/media/catsctrach image.e606e256.webp",
+  "static\\media\\catscratch image.webp": "static/media/catscratch image.e606e256.webp",
   "static\\media\\ed edd eddy image.png": "static/media/ed edd eddy image.88be3b9e.png",
-  "static\\media\\family guy image.png": "static/media/family guy image.158660d8.png"
+  "static\\media\\family guy image.png": "static/media/family guy image.158660d8.png",
+  "static\\media\\futurama image.png": "static/media/futurama image.379971b9.png",
+  "static\\media\\lilo and stitch image.png": "static/media/lilo and stitch image.13dad8ab.png"
 }
