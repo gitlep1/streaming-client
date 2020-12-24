@@ -36,7 +36,7 @@ const UpdatePlayList = props => {
 
   if (updated) {
     return (
-      <Redirect to='/playlists'/>
+      <Redirect to='/playlistsCreated'/>
     )
   }
 

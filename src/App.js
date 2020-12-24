@@ -14,6 +14,7 @@ import homePage from './components/Pages/HomePage/Homepage'
 import CartoonsPage from './components/Pages/CartoonsPage/CartoonsPage'
 // import Playlists from './components/PlayList/playList'
 import PlayListIndex from './components/PlayList/playListIndex'
+import PlayListsCreated from './components/PlayList/playListsCreated'
 import UpdatePlayList from './components/PlayList/playListUpdate'
 import edEddEddyEpisode1 from './components/Pages/Cartoons/EdEddEddy/season1/EdEddEddyEpisode1'
 import edEddEddyEpisode2 from './components/Pages/Cartoons/EdEddEddy/season1/EdEddEddyEpisode2'
@@ -95,6 +96,11 @@ class App extends Component {
           <AuthenticatedRoute user={user} path='/playlists' render={() => (
             <div>
               <PlayListIndex msgAlert={this.msgAlert} user={user} />
+            </div>
+          )}/>
+          <AuthenticatedRoute user={user} path='/playlistsCreated' render={() => (
+            <div>
+              <PlayListsCreated msgAlert={this.msgAlert} user={user} />
             </div>
           )}/>
           <AuthenticatedRoute user={user} exact path='/playListUpdate/:playlistId' render={({ match, history }) => (

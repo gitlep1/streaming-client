@@ -4,7 +4,7 @@ import messages from '../AutoDismissAlert/messages'
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 
-import PlayListsCreated from './playListsCreated'
+// import PlayListsCreated from './playListsCreated'
 import { playListIndex, playListCreate } from '../../api/playList'
 import './playList.scss'
 
@@ -55,7 +55,7 @@ class Playlists extends Component {
     onPlayListCreate = (event) => {
       event.preventDefault()
 
-      const { msgAlert, user } = this.props
+      const { msgAlert, user, history } = this.props
 
       playListCreate(this.state.playlist, user)
 
@@ -64,7 +64,7 @@ class Playlists extends Component {
 
         // getting the res and setting the state of playlists to res.data.playlists
         .then(res => {
-          console.log('setState playlists ', res.data.playlists)
+          // console.log('setState playlists ', res.data.playlists)
           return this.setState({ playlists: res.data.playlists, playlist: { title: '' } })
         })
 
@@ -74,6 +74,8 @@ class Playlists extends Component {
           message: messages.createPlaylistSuccess,
           variant: 'success'
         }))
+
+        .then(() => history.push('/playlistsCreated'))
 
         // in case of an error clear the form and show the rror message alert
         .catch(error => {
@@ -125,7 +127,7 @@ class Playlists extends Component {
     }
 
     render () {
-      console.log('render playlists ', this.state.playlists)
+      // console.log('render playlists ', this.state.playlists)
       return (
         <div className="row">
           <Link to="/homepage" className="btn btn-secondary backButton" style={backButtonStyle}>{'<-Back'}</Link>
@@ -149,7 +151,7 @@ class Playlists extends Component {
                 Submit
               </Button>
             </Form>
-            <output
+            {/* <output
               className="playListOutput"
               type="text"
               name="title"
@@ -159,7 +161,7 @@ class Playlists extends Component {
                 user={this.props.user}
                 msgAlert={this.props.msgAlert}
               />
-            </output>
+            </output> */}
           </div>
         </div>
       )

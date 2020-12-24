@@ -4,6 +4,8 @@ import messages from '../AutoDismissAlert/messages'
 
 import { playListIndex, playListDelete } from '../../api/playList'
 
+import './playList.scss'
+
 class PlayListsCreated extends Component {
   constructor (props) {
     super(props)
@@ -88,9 +90,12 @@ class PlayListsCreated extends Component {
       </li>
     ))
     return (
-      <p className="userCreatedPlaylists">
-        {playlists}
-      </p>
+      <div>
+        <p className="userCreatedPlaylists">
+          {playlists}
+        </p>
+        <Link to="/playlists" className="btn btn-secondary backButton">Back</Link>
+      </div>
     )
   }
 }
