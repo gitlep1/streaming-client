@@ -7,6 +7,9 @@ const authenticatedOptions = (
   <Fragment>
     <Nav.Link href="#change-password" className="changePasswordStyle">Change Password</Nav.Link>
     <Nav.Link href="#sign-out" className="signOutStyle">Sign Out</Nav.Link>
+    <Navbar.Brand href="#Homepage" className="homeStyle">
+    Cartoon Streaming
+    </Navbar.Brand>
   </Fragment>
 )
 
@@ -19,9 +22,6 @@ const unauthenticatedOptions = (
 
 const Header = ({ user }) => (
   <Navbar expand="md" varient="dark" className="navbarStyle">
-    <Navbar.Brand href="#Homepage" className="homeStyle">
-    Cartoon Streaming
-    </Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="ml-auto">

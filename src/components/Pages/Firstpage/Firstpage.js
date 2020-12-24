@@ -8,7 +8,7 @@ const Firstpage = () => (
     <p className="title">Streaming Cartoons</p>
     <Link to="/sign-up" className="signUp">Sign Up</Link>
     <Link to="/sign-in" className="signIn">Sign In</Link>
-    <Link to="/homepage" className="guest">Sign in as guest</Link>
+    {/* <Link to="/homepage" className="guest">Sign in as guest</Link> */}
   </div>
 )
 
