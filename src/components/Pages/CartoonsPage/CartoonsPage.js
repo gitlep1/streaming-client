@@ -56,12 +56,14 @@ const CartoonsPage = () => (
       <h2 id="sectionF">F</h2>
       <Link to="/cartoons/family-guy/episode-1" className="btn btn-primary">Family Guy
       </Link><br></br>
+      <Link to="/cartoons/futurama/episode-1" className="btn btn-secondary">Futurama</Link><br/>
       <h2 id="sectionG">G</h2>
       <h2 id="sectionH">H</h2>
       <h2 id="sectionI">I</h2>
       <h2 id="sectionJ">J</h2>
       <h2 id="sectionK">K</h2>
       <h2 id="sectionL">L</h2>
+      <Link to="/cartoons/lilo-and-stitch/episode-1" className="btn btn-primary">Lilo and Stitch</Link><br/>
       <h2 id="sectionM">M</h2>
       <h2 id="sectionN">N</h2>
       <h2 id="sectionO">O</h2>

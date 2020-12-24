@@ -16,6 +16,12 @@ import CartoonsPage from './components/Pages/CartoonsPage/CartoonsPage'
 import PlayListIndex from './components/PlayList/playListIndex'
 import PlayListsCreated from './components/PlayList/playListsCreated'
 import UpdatePlayList from './components/PlayList/playListUpdate'
+import americanDadEpisode1 from './components/Pages/Cartoons/AmericanDad/season1/AmericanDadEpisode1'
+import avatarTheLastAirbenderEpisode1 from './components/Pages/Cartoons/AvatarTheLastAirbender/season1/AvatarTheLastAirbenderEpisode1'
+import brickleBerryEpisode1 from './components/Pages/Cartoons/Brickleberry/season1/BrickleBerryEpisode1'
+import catDogEpisode1 from './components/Pages/Cartoons/CatDog/season1/CatDogEpisode1'
+import catScratchEpisode1 from './components/Pages/Cartoons/Catscratch/season1/CatScratchEpisode1'
+import courageTheCowardlyDogEpisode1 from './components/Pages/Cartoons/CourageTheCowardlyDog/season1/CourageTheCowardlyDogEpisode1'
 import edEddEddyEpisode1 from './components/Pages/Cartoons/EdEddEddy/season1/EdEddEddyEpisode1'
 import edEddEddyEpisode2 from './components/Pages/Cartoons/EdEddEddy/season1/EdEddEddyEpisode2'
 import edEddEddyEpisode3 from './components/Pages/Cartoons/EdEddEddy/season1/EdEddEddyEpisode3'
@@ -29,6 +35,9 @@ import edEddEddyEpisode10 from './components/Pages/Cartoons/EdEddEddy/season1/Ed
 import edEddEddyEpisode11 from './components/Pages/Cartoons/EdEddEddy/season1/EdEddEddyEpisode11'
 import edEddEddyEpisode12 from './components/Pages/Cartoons/EdEddEddy/season1/EdEddEddyEpisode12'
 import edEddEddyEpisode13 from './components/Pages/Cartoons/EdEddEddy/season1/EdEddEddyEpisode13'
+import familyGuyEpisode1 from './components/Pages/Cartoons/FamilyGuy/season1/FamilyGuyEpisode1'
+import futuramaEpisode1 from './components/Pages/Cartoons/Futurama/season1/FuturamaEpisode1'
+import liloAndStitchEpisode1 from './components/Pages/Cartoons/LiloAndStitch/season1/LiloAndStitchEpisode1'
 
 class App extends Component {
   constructor () {
@@ -117,6 +126,12 @@ class App extends Component {
           {/* <AuthenticatedRoute user={user} exact path='/cartoons/ed-edd-eddy/episode-1' render={() => (
             <Playlists msgAlert={this.msgAlert} user={user} />
           )}/> */}
+          <Route exact path="/cartoons/american-dad/episode-1" component={americanDadEpisode1} />
+          <Route exact path="/cartoons/avatar-the-last-air-bender/episode-1" component={avatarTheLastAirbenderEpisode1} />
+          <Route exact path="/cartoons/brickleberry/episode-1" component={brickleBerryEpisode1} />
+          <Route exact path="/cartoons/catdog/episode-1" component={catDogEpisode1} />
+          <Route exact path="/cartoons/catscratch/episode-1" component={catScratchEpisode1} />
+          <Route exact path="/cartoons/courage-the-cowardly-dog/episode-1" component={courageTheCowardlyDogEpisode1} />
           <Route exact path="/cartoons/ed-edd-eddy/episode-1" component={edEddEddyEpisode1} />
           <Route exact path="/cartoons/ed-edd-eddy/episode-2" component={edEddEddyEpisode2} />
           <Route exact path="/cartoons/ed-edd-eddy/episode-3" component={edEddEddyEpisode3} />
@@ -130,6 +145,9 @@ class App extends Component {
           <Route exact path="/cartoons/ed-edd-eddy/episode-11" component={edEddEddyEpisode11} />
           <Route exact path="/cartoons/ed-edd-eddy/episode-12" component={edEddEddyEpisode12} />
           <Route exact path="/cartoons/ed-edd-eddy/episode-13" component={edEddEddyEpisode13} />
+          <Route exact path="/cartoons/family-guy/episode-1" component={familyGuyEpisode1} />
+          <Route exact path="/cartoons/futurama/episode-1" component={futuramaEpisode1} />
+          <Route exact path="/cartoons/lilo-and-stitch/episode-1" component={liloAndStitchEpisode1} />
         </main>
       </Fragment>
     )

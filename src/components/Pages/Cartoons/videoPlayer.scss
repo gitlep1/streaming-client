@@ -9,7 +9,7 @@ body {
 .descriptionField {
   font-size: 20px;
   color: black;
-  position: absolute;
+  position: absolute fixed;
   top: 125vh;
   left: 44vw;
   bottom: 0vh;
@@ -17,7 +17,7 @@ body {
 
 .season1Dropdown {
   position: absolute;
-  bottom: -100vh;
+  bottom: -220vh;
   left: 42vw;
   width: 12%;
 }

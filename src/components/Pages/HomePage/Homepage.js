@@ -1,14 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import americanDadImage from '../../../ImagesVideos/American Dad/american dad image.png'
-import avatarTheLastAirBenderImage from '../../../ImagesVideos/Avatar The Last Airbender/avatar the last airbender image.png'
+import americanDadImage from '../../../ImagesVideos/AmericanDad/american dad image.png'
+import avatarTheLastAirBenderImage from '../../../ImagesVideos/AvatarTheLastAirbender/avatar the last airbender image.png'
 import brickleBerryImage from '../../../ImagesVideos/Brickleberry/brickleberry image.webp'
 import catDogImage from '../../../ImagesVideos/CatDog/catdog image.png'
-import catScratchImage from '../../../ImagesVideos/Catscratch/catsctrach image.webp'
+import catScratchImage from '../../../ImagesVideos/CatScratch/catscratch image.webp'
 import courageTheCowardlyDogImage from '../../../ImagesVideos/CourageTheCowardlyDog/Courage The Cowardly Dog image.png'
 import edEddEddyImage from '../../../ImagesVideos/EdEddEddy/ed edd eddy image.png'
-import familyGuyImage from '../../../ImagesVideos/Family Guy/family guy image.png'
+import familyGuyImage from '../../../ImagesVideos/FamilyGuy/family guy image.png'
 
 import './Homepage.scss'
 
