@@ -12,13 +12,6 @@ const createPlayListStyle = {
   color: 'red'
 }
 
-const backButtonStyle = {
-  height: '35px',
-  position: 'absolute',
-  top: '10vh',
-  left: '0vw'
-}
-
 class Playlists extends Component {
   constructor (props) {
     super(props)
@@ -130,7 +123,7 @@ class Playlists extends Component {
       // console.log('render playlists ', this.state.playlists)
       return (
         <div className="row">
-          <Link to="/homepage" className="btn btn-secondary backButton" style={backButtonStyle}>{'<-Back'}</Link>
+          <Link to="/homepage" className="btn btn-secondary backButton">{'<-Back'}</Link>
           <div className="col-sm-10 col-md-8 mx-auto mt-5">
             <h3 className="createPlaylistStyle" style={createPlayListStyle}>Create a playlist</h3>
             <Form onSubmit={this.onPlayListCreate}>
