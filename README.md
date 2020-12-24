@@ -3,10 +3,8 @@ This is my streaming app. You can create an account to make playlists or sign in
 TECHNOLOGIES USED:<br>
 HTML<br>
 CSS/SCSS<br>
-JAVASCRIP<br>
+JAVASCRIPT<br>
 REACT<br>
-HEROKU<br>
-MONGODB<br>
 
 PLANNING STRATEGY:<br>
 To plan for this the first thing i did was come up with some wireframes.
@@ -31,8 +29,9 @@ Unsolved Issues/Things I'll add later:<br>
   Can't get the playlist stuff similar to the way you would create and add things to a playlist on youtube.<br>
   Wanted the playlists in a dropdown menu<br>
   More cartoons<br>
+  Wanted a way for a user to sign-in as a guest<br>
 
-Screenshot of the app:
+Screenshot of the app:<br>
 
 <img src="./README images/App Screenshot.png"></img><br>
 
@@ -41,7 +40,7 @@ setup and installation instructions:<br>
   2. npm install video-react redux react chalk<br>
 
 Links:<br>
-  Front-end repo: https://github.com/gitlep1/streaming-server <br>
+  Back-end repo: https://github.com/gitlep1/streaming-server <br>
 
   Live Client: https://gitlep1.github.io/streaming-client/#/ <br>
 
