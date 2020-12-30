@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Button from 'react-bootstrap/Button'
 
 import americanDadImage from '../../../ImagesVideos/AmericanDad/american dad image.png'
 import avatarTheLastAirBenderImage from '../../../ImagesVideos/AvatarTheLastAirbender/avatar the last airbender image.png'
@@ -15,6 +16,7 @@ import './Homepage.scss'
 const homePage = () => (
   <div>
     <Link to="/cartoons" className="btn btn-secondary cartoonsList">{'Cartoons List ->'}</Link>
+    <Button href={'#playlistsCreated/'} variant="success" className="playListsCreatedButton">Playlists</Button>
     <Link to="/cartoons/american-dad/episode-1" className="btn btn-primary americanDadLink" >American Dad
       <img src={americanDadImage} className="americanDadImage" />
     </Link>

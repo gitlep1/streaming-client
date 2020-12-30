@@ -80,43 +80,6 @@ class Playlists extends Component {
             variant: 'danger'
           })
         })
-
-      // playListCreate(this.state.playlist, user)
-      // // getting the response and setting the states createdId to that response I think?
-      //   .then(response => {
-      //     this.setState({
-      //       createdId: response.data._id
-      //     })
-      //   })
-      //   // giving playListIndex the parameters of (this.props.user) and getting the res and setting the state of playlists to res.data.playlists
-      //   .then(() => {
-      //     playListIndex(this.props.user)
-      //       .then(res => {
-      //         console.log('do we get the new list? ', res.data.playlists)
-      //         this.setState({ playlists: res.data.playlists })
-      //       })
-      //   })
-      //   // clearing the form
-      //   .then(() => this.setState({ playlist: {
-      //     title: '' } }))
-      //   // after submitting pushes to the url path /playlists
-      //   .then(() => history.push('/playlists'))
-      //   // showing the message alert
-      //   .then(() => msgAlert({
-      //     heading: 'Playlist Created',
-      //     message: messages.createPlaylistSuccess,
-      //     variant: 'success'
-      //   }))
-      //   // in case of an error clear the form and show the rror message alert
-      //   .catch(error => {
-      //     this.setState({ playlist: {
-      //       title: '' } })
-      //     msgAlert({
-      //       heading: 'Playlist Creation Failed ' + error.message,
-      //       message: messages.createPlaylistFailure,
-      //       variant: 'danger'
-      //     })
-      //   })
     }
 
     render () {
@@ -144,17 +107,6 @@ class Playlists extends Component {
                 Submit
               </Button>
             </Form>
-            {/* <output
-              className="playListOutput"
-              type="text"
-              name="title"
-              value={this.state.playlist.title}
-            >
-              <PlayListsCreated
-                user={this.props.user}
-                msgAlert={this.props.msgAlert}
-              />
-            </output> */}
           </div>
         </div>
       )

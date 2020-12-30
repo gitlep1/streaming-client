@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Link, withRouter } from 'react-router-dom'
 import messages from '../AutoDismissAlert/messages'
+import Button from 'react-bootstrap/Button'
 
 import { playListIndex, playListDelete } from '../../api/playList'
 
@@ -13,7 +14,8 @@ class PlayListsCreated extends Component {
       playlists: [],
       playlist: {
         title: ''
-      }
+      },
+      userEqualsOwner: true
     }
   }
 
@@ -85,8 +87,14 @@ class PlayListsCreated extends Component {
     const playlists = this.state.playlists.map(playlist => (
       <li key={playlist._id}>
         <Link to={`/playListUpdate/${playlist._id}`}>{playlist.title}</Link>
-        <button className="btn btn-secondary deleteButton" name={playlist._id} onClick={(event) => this.onPlaylistDelete(event, playlist._id)} >Delete</button>
-        <Link to={'/playListUpdate/' + playlist._id} className="btn btn-primary editButton">Edit</Link>
+        {(this.props.user._id === playlist.owner) ? (
+          <div>
+            <Button variant="danger" name={playlist._id} onClick={(event) => this.onPlaylistDelete(event, playlist._id)} className="deleteButton">Delete</Button>{''}
+            <Button href={'#playListUpdate/' + playlist._id} variant="success" className="editButton">Edit</Button>{''}
+          </div>
+        ) : ''}
+        {/* <button className="btn btn-secondary deleteButton" name={playlist._id} onClick={(event) => this.onPlaylistDelete(event, playlist._id)} >Delete</button>
+        <Link to={'/playListUpdate/' + playlist._id} className="btn btn-primary editButton">Edit</Link> */}
       </li>
     ))
     return (
@@ -95,6 +103,12 @@ class PlayListsCreated extends Component {
           {playlists}
         </p>
         <Link to="/playlists" className="btn btn-secondary backButton">Back</Link>
+        {/* {(this.props.user._id === this.state.playlist.owner) ? (
+          <div>
+            <Button variant="danger" onClick={this.onPlaylistDelete} className="btn btn-secondary deleteButton">Delete</Button>{' '}
+            <Button href={'#playListUpdate/' + this.state.playlist._id} className="btn btn-primary editButton">Edit</Button>{' '}
+          </div>
+        ) : ''} */}
       </div>
     )
   }

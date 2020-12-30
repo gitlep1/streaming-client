@@ -42,17 +42,19 @@ const UpdatePlayList = props => {
 
   return (
     <React.Fragment>
-      <h1 className="updatePlaylistTitle">Change Playlist Name</h1>
-      <form onSubmit={handleSubmit}>
-        <input
-          placeholder="New Playlist Name"
-          value={playlist.title}
-          onChange={handleChange}
-          name="title"
-        />
-        <button type="submit">Rename Playlist</button>
-      </form>
-      <Link to="/playlists" className="btn btn-secondary backButton">Back</Link>
+      <div className="updatePlaylist">
+        <h1>Change Playlist Name</h1>
+        <form onSubmit={handleSubmit}>
+          <input
+            placeholder="New Playlist Name"
+            value={playlist.title}
+            onChange={handleChange}
+            name="title"
+          />
+          <button type="submit">Rename Playlist</button>
+        </form>
+      </div>
+      <Link to="/playlistsCreated" className="btn btn-secondary backButton">Back</Link>
     </React.Fragment>
   )
 }
